@@ -1,0 +1,110 @@
+<!DOCTYPE html>				
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">		
+		<title>Thaine Koen: Week 2</title>	<!--Changed Title 1-->
+		<link rel="stylesheet" type="text/css" href="../css/styles.css"> 	<!--Refrence style sheet in css folder 1-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Cinzel:wght@600&family=Explora&family=Genos:wght@354;400&family=Righteous&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+
+<header>
+
+	<h1 id="header_h1">Contact</h1>		
+
+	<nav>
+		<ul>
+		    <li class="home"><a href="index.html">Home</a></li>
+
+		    <li class="about"><a href="about.html">About</a></li>
+
+		    <li class="examples"><a href="examples.html">Examples</a></li>
+
+		    <li class="contact"><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+</header>
+
+<div class="contactme">
+
+	<h3 id="header_h3">Contact me!</h3>
+
+  <form id="redemption" method="post">
+
+  	<p id="required">If the field shows <abbr title="required">*</abbr> they are required.</p>
+
+    <label for="name">First and Last Name</label>
+    <input type="text" id="name" name="name" placeholder="Your name.." required/>
+    <abbr title="required" aria-label="required">*</abbr>
+
+    <label for="address">Full Mailing Address</label>
+    <textarea id="address" name="address" rows="2" cols="35" placeholder="56745 clementine way Webster, WI 67890.." required/></textarea>
+    <abbr title="required" aria-label="required">*</abbr>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="Email..." required/>
+    <abbr title="required" aria-label="required">*</abbr>
+
+    <label for="pnumber">Primary Phone #</label>
+    <input type="tel" id="Primephone" placeholder="123-456-7891..." pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+    
+
+    <label for="contactp">Contact Preference</label>
+    <select id="contactp" name="contactp">
+      <option value="Phone">Phone #</option>
+      <option value="Email">Email</option>
+      <option value="Maddress">Mailing Address</option>
+  	</select>
+
+	<p class="radiotext">Did you enjoy the information Provided on this blog?</p>
+	<label for="yes">Yes</label>
+    <input type="radio" id="yesno" name="yesno" value="yes">
+
+
+	<label for="no">No</label>
+  	<input type="radio" id="yesno" name="yesno" value="no">
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+
+<main>
+	<article>
+		<h2 id="header_h2">My Information</h2>
+
+		<img id="me" 
+		src="../images/me.png" 
+		alt="Picture of me">
+
+		<p class="contact_article"><strong>Email:</strong> example.email@gmail.com</p>
+		<p class="contact_article"><strong>Mobile:</strong> 999-999-9999</p>
+		<p class="contact_article">Email is my preffered method of communication.</p>
+	</article>
+
+	<footer>
+		<p id="footer">This is the contact page.</p>
+<!--Icons for which screen size is used, to be displayed at the bottom of the footer, 
+	with ids so they can be individually selected when making styles in CSS.-->
+	<img id="mobile-icon" 
+	src="../images/mobile.png" 
+	alt="Mobile Icon Identifier">
+ 	
+
+    <img id="tablet-icon"
+     src="../images/tablet.png"
+     alt="Tablet View Icon Identifier">
+
+    <img id="pc-icon"
+     src="../images/pc.png"
+     alt="Desktop View Icon Identifier">
+	</footer>
+
+</main>
+						<!--end of body-->
+</body>
+</html>
